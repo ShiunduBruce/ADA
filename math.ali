@@ -1,0 +1,87 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_IO
+
+U math%b		math.adb		3c7f313a NE OO PK
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+Z system.exp_int%s	s-expint.adb		s-expint.ali
+
+U math%s		math.ads		0e758b93 EE NE OO PK
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-inteio.ads		20200819050644 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200819050644 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D math.ads		20210217111104 0e758b93 math%s
+D math.adb		20210217111824 6ab5e660 math%b
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-expint.ads		20200819050646 192336fc system.exp_int%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z s b [gcd math 3 13 none]
+G c Z s b [factorial math 4 13 none]
+G c Z s b [sumdigits math 5 13 none]
+G c Z s b [isdivisiblebynine math 6 13 none]
+G c Z s b [isperfectnumber math 7 13 none]
+G c Z s b [ispalindrome math 8 13 none]
+G c Z s b [digitsnum math 9 13 none]
+X 1 ada.ads
+16K9*Ada 20e8 13|1r6 1r31 2r6 2r23
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 13|1w10 1r35
+X 7 a-textio.ads
+57K13*Text_IO 727e16 13|2w10 2r27
+X 12 math.ads
+1K9*Math 11l5 11e9 13|3b14 80l5 80t9
+3V13*gcd{positive} 3>19 3>22 13|5b13 17l8 17t11
+3i19 A{positive} 13|5b19 6r22
+3i22 B{positive} 13|5b22 7r22
+4V13*factorial{positive} 4>24 13|19b13 26l8 26t17
+4i24 N{natural} 13|19b24 22r19
+5V13*sumDigits{natural} 5>24 13|27b13 36l8 36t17
+5i24 N{integer} 13|27b24 28r25
+6V13*isDivisibleByNine{boolean} 6>32 13|38b13 41l8 41t25
+6i32 N{natural} 13|38b32 40r14
+7V13*isPerfectNumber{boolean} 7>30 13|42b13 51l8 51t23
+7i30 N{natural} 13|42b30 45r19 46r13 50r20
+8V13*isPalindrome{boolean} 8>27 13|63b13 76l8 76t20
+8i27 N{natural} 13|63b27 65r25 66r41 74r17
+9V13*digitsNum{positive} 9>24 13|52b13 61l8 61t17 66s31
+9i24 N{natural} 13|52b24 54r25
+X 13 math.adb
+6i7 X{positive} 9r13 10r13 11m13 11r18 13r22 16r14
+7i7 Y{positive} 9r18 10r17 11r22 13m13 13r18
+20i7 Fakt{positive} 23m10 23r18 25r14
+22i11 I{integer} 23r25
+28i7 temp{integer} 31r13 32r25 33m10 33r18
+29i7 sum{natural} 32m10 32r17 35r14
+43i7 sum{natural} 47m13 47r20 50r14
+45i11 i{integer} 46r19 47r26
+53i7 counter{natural} 57m10 57r21 60r14
+54i7 temp{natural} 56r13 58m10 58r18
+64i7 rev{natural} 69m10 69r17 74r11
+65i7 temp{natural} 68r13 69r24 70m10 70r18
+66i7 numDigits{natural} 69r50 71m10 71r23
+
