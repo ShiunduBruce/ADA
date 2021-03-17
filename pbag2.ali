@@ -1,0 +1,54 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_DIRECT_BOOLEAN_OPERATORS
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U pbag2%b		pbag2.adb		9020b180 NE OO PK GE
+
+U pbag2%s		pbag2.ads		055c6ecf BN EE NE OO PK GE
+
+D pbag2.ads		20210317092038 055c6ecf pbag2%s
+D pbag2.adb		20210317093754 957cdf4f pbag2%b
+D system.ads		20200819050648 32a08138 system%s
+G a e
+G c Z s b [pbag2 standard 3 9 none]
+X 1 pbag2.ads
+2+12 Elem 5r40 6r43 7r38 9r43 13r17 24r33 2|3r40 14r43 21r38 29r33
+3k9*PBag2 2z12 12E10 25l5 25e10 2|1b14 46l5 46t10
+4R9*Bag 4d14 5r29 6r32 7r30 10r33 19c9 22e14 24r25 2|3r29 14r32 21r30 29r25
+. 38r30
+4i14 Max{positive} 19r13 20r23
+5U14*Add 5=19 5>34 2|3b14 13l8 13t11
+5r19 B{4R9} 2|3b19 4r35 7m10 7r40 9m10 9r23 10m10 10r17 11m10 11r17
+5*34 E{2+12} 2|3b34 4r38 10r39
+6U14*Remove 6=22 6>37 2|14b14 20l8 20t14
+6r22 B{4R9} 2|14b22 15r35 17r26 18m10 18r40
+6*37 E{2+12} 2|14b37 15r38
+7V13*Multiplicity{natural} 7>27 7>35 2|21b13 28l8 28t20
+7r27 B{4R9} 2|21b27 22r35 25r17
+7*35 E{2+12} 2|21b35 22r38
+9U22 Process_Elem 9>35 9>49 2|42s13
+9*35 ele{2+12}
+9i49 mult{natural}
+10u17*For_Each 10>27 2|38b14 45l8 45t16
+10r27 B{4R9} 2|38b24 40r16 40r32 41r13 42r27 42r46
+12R10 Item 15e14 17r48
+13*7 element{2+12} 2|10m28 32r23 42r37
+14i7 multiplicity{natural} 2|7m24 7r54 11m28 17r40 18m24 18r54 25r31 41r23
+. 42r56
+17A9 TArray(12R10)<integer> 20r13
+20a7 Data{17A9} 2|7m12 7r42 10m12 11m12 17r28 18m12 18r42 25r19 31r18 32r15
+. 40r18 40r34 41r15 42r29 42r48
+21i7 Pointer{natural} 2|9m12 9r25 10r19 11r19
+24V13 index_of{integer} 24>22 24>30 2|4s26 15s26 22s26 29b13 37l8 37t16
+24r22 B{4R9} 2|29b22 31r16 32r13
+24*30 E{2+12} 2|29b30 32r33
+X 2 pbag2.adb
+4i7 index{integer} 6r10 7r17 7r47
+15i7 index{integer} 17r10 17r33 18r17 18r47
+22i7 index{integer} 24r10 25r24
+31i11 i{integer} 32r20 33r20
+40i11 I{integer} 41r20 42r34 42r53
+

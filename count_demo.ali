@@ -1,0 +1,68 @@
+V "GNAT Lib v2020"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U count_demo%b		count_demo.adb		9688eb68 NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.float_text_io%s	a-flteio.ads		a-flteio.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+Z ada.tags%s		a-tags.adb		a-tags.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W count%s		count.adb		count.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-flteio.ads		20200819050644 e18a47a0 ada.float_text_io%s
+D a-inteio.ads		20200819050644 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-tiflio.ads		20200819050644 bf196650 ada.text_io.float_io%s
+D a-tiinio.ads		20200819050644 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D count.ads		20210313204038 020f03e3 count%s
+D count.adb		20210313204008 d9245ba8 count%b
+D count_demo.adb	20210313204414 2db2f3e2 count_demo%b
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [count_demo standard 5 11 none]
+G r i none [count_demo standard 5 11 none] [count standard 9 10 none]
+X 1 ada.ads
+16K9*Ada 20e8 14|1r6 1r25 1r38 2r5 2r24 2r37
+X 3 a-flteio.ads
+20K13*Float_Text_IO[9|46] 14|1w10 2r9
+X 4 a-inteio.ads
+18K13*Integer_Text_IO[10|46] 14|1w42 2r41
+X 8 a-textio.ads
+57K13*Text_IO 727e16 14|1w29 2r28
+X 10 a-tiinio.ads
+80U14*Put 14|17s4[4|18]
+X 12 count.ads
+9v10*Count 14|3w6 15r29
+X 14 count_demo.adb
+5U11*count_demo 5b11 18l5 18t15
+7A9 Grid(natural)<integer><integer> 8r7 15r53
+8a4 M{7A9} 17r17
+10V13 has_More_Than_Three{boolean} 10b13 10>33 13l8 13t27 15r59
+10i33 e{natural} 12r16
+15V13 my_count[12|9]{natural} 13|1b10 14|17s8
+
