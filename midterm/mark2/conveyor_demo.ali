@@ -1,0 +1,65 @@
+V "GNAT Lib v2020"
+M P W=b
+P ZX
+
+RN
+RV NO_IO
+RV NO_DEFAULT_INITIALIZATION
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U conveyor_demo%b	conveyor_demo.adb	9a62488c NE OO SU IL
+W ada%s			ada.ads			ada.ali
+W ada.integer_text_io%s	a-inteio.ads		a-inteio.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+W conveyer_system%s	conveyer_system.adb	conveyer_system.ali
+Z system.img_int%s	s-imgint.adb		s-imgint.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-inteio.ads		20200819050644 f64b89a4 ada.integer_text_io%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-tiinio.ads		20200819050644 390edddb ada.text_io.integer_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D conveyer_system.ads	20210320101636 3f80b799 conveyer_system%s
+D conveyer_system.adb	20210320101710 2f8dd511 conveyer_system%b
+D conveyor_demo.adb	20210320104426 fd5da3dc conveyor_demo%b
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-imgint.ads		20200819050646 02dbe0c2 system.img_int%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+G a e
+G c Z b b [conveyor_demo standard 4 11 none]
+G r i none [conveyor_demo standard 4 11 none] [conveyer_system standard 5 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 12|1r23 1r44 2r5 2r26
+X 3 a-inteio.ads
+18K13*Integer_Text_IO[8|46] 12|1w27 2r9
+X 7 a-textio.ads
+57K13*Text_IO 727e16 12|1w48 2r30
+X 10 conveyer_system.ads
+5k9*Conveyer_System 20e20 12|1w6 6r21
+6R9 Conveyor 12|8r9[6]
+7U14 Move_Robot 12|11s6[6] 13s6[6] 15s6[6]
+8U14 Put 12|12s6[6] 14s6[6] 16s6[6]
+9U14 Show 12|17s9[6]
+X 12 conveyor_demo.adb
+4U11*conveyor_demo 4b11 19l5 19t18
+6K9 conv[10|5] 8r4 11r1 12r1 13r1 14r1 15r1 16r1 17r4
+8r1 B{10|6R9[6]} 11m17 11r17 12m10 12r10 13m17 13r17 14m10 14r10 15m17 15r17
+. 16m10 16r10 17m14 17r14
+
