@@ -10,30 +10,21 @@ procedure conveyor_demo is
    end PutStir;
 
    package conv is new Conveyer_System(Toys, Positive, PutStir);
-C: conv.Conveyor(8);
-type Command is (Move_Left, Move_Right, Put, Get);
-type Algorithm is array(Index range <>) of Command;
+   use conv;
+   C: Conveyor(8);
    AA : Algorithm := (Put, Move_Right, Move_Right, Put);
    AB : Algorithm := (Get, Move_Left, Move_Left, Get);
    AC : Algorithm := (Put, Move_Left);
    AD : Algorithm := (Get, Move_Right);
 begin
-conv.Move_Robot(C,1);
-conv.Put(C, Nothing);
-conv.Move_Robot(C,2);
-conv.Put(C, Car);
-conv.Move_Robot(C,4);
-conv.Put(C,Doll);
-conv.Put(C,Ball);
-
 
 Run (C, AA, 1);
-Show (C);
+Show (C); New_Line;
 Run (C, AB, 1);
-Show (C);
+Show (C);New_Line;
 Run (C, AC, 5);
-Show (C);
+Show (C);New_Line;
 Run (C, AD, 5);
-Show (C);
+Show (C);New_Line;
 
 end conveyor_demo;

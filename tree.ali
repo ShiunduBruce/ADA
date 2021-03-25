@@ -1,0 +1,97 @@
+V "GNAT Lib v2020"
+P ZX
+
+RN
+RV NO_ALLOCATORS
+RV NO_IO
+RV NO_LOCAL_ALLOCATORS
+RV NO_RECURSION
+RV NO_STANDARD_STORAGE_POOLS
+RV NO_DYNAMIC_SIZED_OBJECTS
+
+U tree%b		tree.adb		23d11724 NE OO PK GE
+
+U tree%s		tree.ads		ba2c10d6 BN EE NE OO PK GE
+W ada%s			ada.ads			ada.ali
+W ada.text_io%s		a-textio.adb		a-textio.ali
+
+D ada.ads		20200819050644 76789da1 ada%s
+D a-except.ads		20200819050644 a7106115 ada.exceptions%s
+D a-ioexce.ads		20200819050644 e4a01f64 ada.io_exceptions%s
+D a-stream.ads		20200819050644 119b8fb3 ada.streams%s
+D a-tags.ads		20200819050644 edddc8f0 ada.tags%s
+D a-textio.ads		20200819050644 aef4d56d ada.text_io%s
+D a-unccon.ads		20200819050644 0e9b276f ada.unchecked_conversion%s
+D interfac.ads		20200819050646 5ab55268 interfaces%s
+D i-cstrea.ads		20200819050646 e53d8b8e interfaces.c_streams%s
+D system.ads		20200819050648 32a08138 system%s
+D s-crtl.ads		20200819050646 0ebbdb71 system.crtl%s
+D s-exctab.ads		20200819050646 54135002 system.exception_table%s
+D s-ficobl.ads		20200819050646 078245e4 system.file_control_block%s
+D s-parame.ads		20200819050648 4752c4cb system.parameters%s
+D s-secsta.ads		20200819050648 9b3ab94b system.secondary_stack%s
+D s-soflin.ads		20200819050648 a7318a92 system.soft_links%s
+D s-stache.ads		20200819050648 a37c21ec system.stack_checking%s
+D s-stalib.ads		20200819050648 6b7a13f2 system.standard_library%s
+D s-stoele.ads		20200819050648 2dc34a04 system.storage_elements%s
+D s-traent.ads		20200819050648 005bf670 system.traceback_entries%s
+D s-unstyp.ads		20200819050648 5ecf7212 system.unsigned_types%s
+D s-wchcon.ads		20200819050648 1b7d22d2 system.wch_con%s
+D tree.ads		20210324125140 14d8c5bb tree%s
+D tree.adb		20210324133204 3709d29f tree%b
+G a e
+G c Z s b [tree standard 8 9 none]
+X 1 ada.ads
+16K9*Ada 20e8 23|1r6 2r5
+X 6 a-textio.ads
+57K13*Text_IO 727e16 23|1w10 2r9
+X 23 tree.ads
+5+6 Elem 6r26 10r45 13r22 27r9 24|13r24
+6V16 "<"{boolean} 6>20 6>23 24|18s15 20s21
+6*20 a{5+6}
+6*23 b{5+6}
+8k9*Tree 5z6 6z16 20E14 31l5 31e9 24|1b14 76l5 76t9
+9P6*BSTree 12r39 13r38 15r23 16r22 17r24 20r42 21r44 22r43 25c6 28r21 24|2r42
+. 3r11 13r40 28r26 34r25 40r42 50r40 60r44 70r26
+10A6*TArray(5+6)<integer> 12r24 15r38 16r37 17r39 20r60 21r62 22r61 24|2r27
+. 28r41 29r14 34r40 35r13 40r60 50r58 60r62 70r41 71r10
+12V10*Make_Tree{9P6} 12>21 24|2b13 11l8 11t17
+12a21 A{10A6} 24|2b24 5r16 5r25 6r17
+13U11*Insert 13>19 13=28 24|6s10 13b13 19s13 21s13 25l8 25t14
+13*19 E{5+6} 24|13b21 16r25 18r13 19r20 20r23 21r20
+13p28 T{9P6} 24|13b30 15r10 16m10 18r17 19r23 20r16 21r23
+15V10*PreOrder{10A6} 15>20 24|28b13 33l8 33t16
+15p20 T{9P6} 24|28b23 31r30
+16V10*InOrder{10A6} 16>19 24|34b13 39l8 39t15
+16p19 T{9P6} 24|34b22 37r29
+17V10*PostOrder{10A6} 17>21 24|70b12 75l7 75t16
+17p21 T{9P6} 24|70b23 73r31
+20U14 StoreInOrderRecursive 20>36 20=50 20>68 24|37s7 40b14 44s10 47s10 49l7
+. 49t28
+20p36 T{9P6} 24|40b36 43r10 44r32 46r22 47r32
+20a50 B{10A6} 24|40b50 44m41 46m10 47m42
+20i68 I{positive} 24|40b68 41r27
+21U14 StorePostOrderRecursive 21>38 21=52 21>70 24|60b14 64s10 65s10 69l7
+. 69t30 73s7
+21p38 T{9P6} 24|60b38 63r10 64r34 65r34 67r22
+21a52 B{10A6} 24|60b52 64m43 65m44 67m10
+21i70 I{positive} 24|60b70 61r27
+22U14 StorePreOrderRecursive 22>37 22=51 22>69 24|31s7 50b11 56s10 57s10
+. 59l8 59t30
+22p37 T{9P6} 24|50b34 53r10 55r22 56r33 57r33
+22a51 B{10A6} 24|50b48 55m10 56m42 57m43
+22i69 I{positive} 24|50b66 51r27
+24R6 Node 25r23 26c6 29e14 24|16r19
+27*6 d{5+6} 24|18r19 20r18 46r24 55r24 67r24
+28p6 LeftT{9P6} 24|19m25 44r34 56r35 64r36
+28p13 RightT{9P6} 24|21m25 47r34 57r35 65r36
+X 24 tree.adb
+3p7 T{23|9P6} 6m23 6r23 9r14
+5i11 i{integer} 6r19
+29a8 arr{23|10A6} 31m33 31r33 32r14
+35a7 arr{23|10A6} 37m32 37r32 38r14
+41i7 index{positive} 44r44 45m10 45r19 46r12 47r45
+51i7 index{positive} 54m10 54r19 55r12 56r45 57r46
+61i7 index{positive} 64r46 65r47 66m10 66r19 67r12
+71a4 arr{23|10A6} 73m34 73r34 74r14
+
